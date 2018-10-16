@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Superclass - Voice 201</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<main role="main" class="container">
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="container">
+        <div class="card text-center bg-light mb-3">
+            <div class="card-body">
+                <h1>Superclass Voice 201</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card  bg-light mb-3">
+            <div class="card-header">Calls</div>
+
+            <div class="card-body">
+                <table class="table table-sm mb-0">
+                    <thead>
+                    <tr>
+                        <th scope="col">CallSid</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">From</th>
+                        <th scope="col">To</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                    </thead>
+                    <tbody id="callStatusTable">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="card  bg-light mb-3">
+            <div class="card-header">Conferences</div>
+
+            <div class="card-body">
+                <a class="btn btn-secondary" href="#" role="button" id="sendThanks">Send thanks!</a></p>
+                <table class="table table-sm mb-0">
+                    <thead>
+                    <tr>
+                        <th scope="col">FriendlyName</th>
+                        <th scope="col">ConferenceSid</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                    </thead>
+                    <tbody id="conferenceStatusTable">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="card  bg-light mb-3">
+            <div class="card-header">Participants</div>
+
+            <div class="card-body">
+
+                <table class="table table-sm mb-0">
+                    <thead>
+                    <tr>
+                        <th scope="col">ConferenceSid</th>
+                        <th scope="col">CallSid</th>
+                        <th scope="col">From</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                    </thead>
+                    <tbody id="participantStatusTable">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="card  bg-light mb-3">
+            <div class="card-header">Gather</div>
+            <div class="card-body">
+                <p><a class="btn btn-secondary" href="#" role="button" id="gatherCall">Start Gather Call</a></p>
+                <h5 class="card-title">Callbacks</h5>
+
+                <table class="table table-sm mb-0">
+                    <thead>
+                    <tr>
+                        <th scope="col">Parameter</th>
+                        <th scope="col">Value</th>
+                    </tr>
+                    </thead>
+                    <tbody id="gatherCallbackTable">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="card   bg-light mb-3">
+            <div class="card-header">Pay</div>
+            <div class="card-body">
+                <p><a class="btn btn-secondary" href="#" role="button" id="payCall">Start Pay Call</a></p>
+                <h5 class="card-title">Callbacks</h5>
+                <table class="table table-sm mb-0">
+                    <thead>
+                    <tr>
+                        <th scope="col">Parameter</th>
+                        <th scope="col">Value</th>
+                    </tr>
+                    </thead>
+                    <tbody id="payCallbackTable">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <hr>
+
+    </div> <!-- /container -->
+
+</main><!-- /.container -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="websocketDemo.js"></script>
+<script src="verbs/gather.js"></script>
+<script src="verbs/pay.js"></script>
+<script src="verbs/call.js"></script>
+<script src="verbs/conference.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+
+</body>
+</html>
